@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>لوحة التحكم - منصة الشعر العربي</title>
+</head>
+<body>
+    <header>
+        <h1>لوحة التحكم - منصة الشعر العربي</h1>
+    </header>
+    <main>
+        <section id="poem-list">
+            <h2>إدارة القصائد</h2>
+            <div id="poems"></div>
+        </section>
+
+        <section id="poem-form">
+            <h2>إضافة أو تعديل قصيدة</h2>
+            <input type="hidden" id="poem-index">
+            <input type="text" id="poem-title" placeholder="عنوان القصيدة" required>
+            <textarea id="poem-content" placeholder="نص القصيدة" required></textarea>
+            <button id="submit-btn">إضافة القصيدة</button>
+        </section>
+    </main>
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024 منصة الشعر العربي</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
